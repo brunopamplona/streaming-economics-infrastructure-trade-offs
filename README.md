@@ -19,11 +19,11 @@ Platform characteristics:
 
 + No 4K (HD 720p /SD 480p only)
 
-~35 subscription plans offers available
++ ~35 subscription plans offers available
 
-High churn (9–12%)
++ High churn (9–12%)
 
-CDN-based delivery
++ CDN-based delivery
 
 💰 Cost Structure (Estimated)
 
