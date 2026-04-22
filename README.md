@@ -61,18 +61,18 @@ LTV Drivers
 
 1. Improve Quality (CDN / Player)
 
-↓ churn
-↑ cost
+  ↓ churn
+  ↑ cost
 
 2. Increase Acquisition
 
-↑ revenue
-↑ infra cost
+  ↑ revenue
+  ↑ infra cost
 
 3. Push Bundle (Família Plan)
 
-↑ LTV
-↑ content/licensing cost
+  ↑ LTV
+  ↑ content/licensing cost
 
 📈 Strategic Simulations
 
