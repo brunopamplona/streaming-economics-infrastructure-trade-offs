@@ -9,13 +9,20 @@ Understand how infrastructure cost + churn + pricing define business viability.
 
 Platform characteristics:
 
-900k MAUs
-7M playbacks/month
-50k VOD catalog
-120+ live channels
-No 4K (HD/SD only)
-~35 subscription plans
++ 900k MAUs
+
++ 7M playbacks/month
+
++ 50k VOD catalog
+
++ 120+ live channels
+
++ No 4K (HD 720p /SD 480p only)
+
+~35 subscription plans offers available
+
 High churn (9–12%)
+
 CDN-based delivery
 
 💰 Cost Structure (Estimated)
