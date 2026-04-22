@@ -27,54 +27,53 @@ Platform characteristics:
 
 💰 Cost Structure (Estimated)
 
-Engineering
+Engineering:
 
-Backend + BFF + Frontend squads
-~R$ 12M – 20M / year
++ Backend + BFF + Frontend squads: ~R$ 12M – 20M / year
 
-Cloud & Backend Infra
+Cloud & Backend Infra:
 
-APIs, ingestion, storage
-~R$ 8M – 18M / year
++ APIs, ingestion, storage: ~R$ 8M – 18M / year
 
-CDN (Largest Cost Driver)
+CDN (Largest Cost Driver):
 
-Video delivery (HD streaming)
-~R$ 25M – 60M / year
++ Video delivery (HD streaming): ~R$ 25M – 60M / year
 
 Data & Analytics
 
-Pipelines, tracking, BI
-~R$ 5M – 12M / year
++ Pipelines, tracking, BI: ~R$ 5M – 12M / year
 
 Total Estimated Cost
 
-👉 R$ 60M – 120M / year
+👉 R$ 54.5M – 108M / year
 
 📊 Unit Economics
 
-Cost per User
-~R$ 7–10 per user/month (infra only)
++ Cost per User: ~R$ 7–10 per user/month (infra only)
 
 LTV Drivers
 
-Price per plan
-Churn rate
-Retention curve
++ Price per plan
++ Churn rate
++ Retention curve
 
 🔥 Key Trade-offs
 
 1. Improve Quality (CDN / Player)
+
 ↓ churn
 ↑ cost
 
 2. Increase Acquisition
+
 ↑ revenue
 ↑ infra cost
 
 3. Push Bundle (Família Plan)
+
 ↑ LTV
 ↑ content/licensing cost
+
 📈 Strategic Simulations
 
 Examples:
