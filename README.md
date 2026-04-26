@@ -1,6 +1,7 @@
 # streaming-economics-infrastructure-trade-offs
 
 The work here is not academic. Every framework was built under real P&L constraints, with actual budget decisions depending on the output.
+Headline result: Portfolio ROAS improved from 5.4x → 8.5x with 8% lower spend by reallocating budget from low-return plans (LTV/CAC < 4x) to high-return plans (LTV/CAC up to 17x).
 
 🎯 Objective
 
@@ -19,12 +20,13 @@ driver (R$25M–60M/year), making every acquisition decision implicitly an infra
 
 Problems addressed:
 
-Marketing budget allocated by volume targets, not marginal returns — plans with LTV/CAC below 4x were receiving spend while 
-high-return plans were underfunded Infrastructure cost per user (~R$7–10/month) was invisible to marketing decisions, 
-distorting true ROAS High churn (9–12%) made acquisition scaling economically fragile without retention improvements
+1. Marketing budget allocated by volume targets, not marginal returns — plans with LTV/CAC below 4x were receiving spend while high-return plans were underfunded
+2. Infrastructure cost per user (~R$7–10/month) was invisible to marketing decisions, distorting true ROAS
+3. High churn (9–12%) made acquisition scaling economically fragile without retention improvements
 
 Platform characteristics:
 
+```
 | Metric | Value | Notes |
 |---|---|---|
 | Monthly Active Users | ~900K | |
@@ -37,16 +39,48 @@ Platform characteristics:
 | Delivery Infrastructure | CDN-based | Largest single cost driver |
 | Estimated CDN Cost | R$25M–60M/year | ~46–56% of total cost base |
 | Total Estimated Costs | R$54.5M–108M/year | Infra + Engineering + Content + Marketing |
+```
 
-💰 Cost Structure 
-(Estimated and discreted by cost types)
+💰 Cost Structure (Estimated)
+
+```
+| # | Domain | Description | FTEs | Monthly Cost | Annual Cost (est.) |
+|---|---|---|---|---|---|
+| 1 | Engineering | Backend + BFF + Frontend squads | 35 | R$1.4M | R$12M–20M |
+| 2 | Cloud & Backend Infra | APIs, ingestion, storage | 3 | R$750K | R$8M–18M |
+| 3 | CDN | Video delivery — HD/SD streaming | 3 | R$2.5M | **R$25M–60M** |
+| 4 | Data & Analytics | Pipelines, tracking, BI | 2 | R$167K | R$5M–12M |
+| 5 | Product | App (TV, mobile, web), UX/UI, features | 6 | R$350K | R$4M–6M |
+| 6 | Marketing & Growth | Paid media, acquisition, CRM, retargeting | 6 | R$2.0M | R$20M–28M |
+| 7 | Content | Licensing (Telecine, Premiere+), catalog strategy | 8 | R$4.0M | R$40M–60M |
+| 8 | Admin | HR, IT, FinOps | 8 | R$400K | R$4M–6M |
+| | **Total** | | **71** | **~R$11.6M** | **R$54.5M–108M** |
+```
 
 💰 Revenue Structure 
-(Estimated and discreted by revenue flows: suscriptions, rentals, movie purchases)
+
+```
+| # | Stream | Plan / Type | Active Subscribers | Price (R$/mo) | Monthly Revenue |
+|---|---|---|---|---|---|
+| 1.1 | Subscription | Plano Família | ~122,800 | R$121 | R$14.9M |
+| 1.2 | Subscription | Plano Premiere | ~5,800 | R$90 | R$520K |
+| 1.3 | Subscription | Plano Telecine | ~4,300 | R$40 | R$173K |
+| 1.4 | Subscription | Plano HBO | ~11,600 | R$40 | R$462K |
+| 2 | Rentals | Individual title rentals | ~3,500 | R$8 avg | R$29K |
+| 3 | Purchases | Movie purchases (TVOD) | ~500 | R$26 avg | R$13K |
+| | **Total** | | **~148,500** | | **~R$16.1M/mo (R$193M/yr)** |
+```
 
 📊 Unit Economics
 
-+ Cost per User: ~R$ 7–10 per user/month (infra only)
+```
+| Metric | Value | Notes |
+|---|---|---|
+| Cost per user / month (infra only) | R$7–10 | CDN + Cloud + Engineering allocated per MAU |
+| LTV range by plan | R$175 – R$1,513 | Compras/Alugueis (lowest) → Família (highest) |
+| LTV/CAC range by plan × channel | 3x – 17x | HBO/Google (3x) → Família/Google (17x) |
+| Payback period (Família, Meta) | ~1.4 months | At optimized CAC of R$75 |
+```
 
 Approach:
 Case 1 — Unit Economics & LTV Modeling
@@ -99,3 +133,5 @@ Case 3	Economics	Ensure sustainability
 Marketing Science is not just modeling → it's decision systems
 Retention, acquisition, and infra are interdependent
 The best insights come from connecting layers, not isolating them
+
+Status: 🔄 In progress — converting from Excel to Python notebooks
