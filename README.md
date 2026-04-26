@@ -26,7 +26,6 @@ Problems addressed:
 
 Platform characteristics:
 
-```
 | Metric | Value | Notes |
 |---|---|---|
 | Monthly Active Users | ~900K | |
@@ -39,11 +38,9 @@ Platform characteristics:
 | Delivery Infrastructure | CDN-based | Largest single cost driver |
 | Estimated CDN Cost | R$25M–60M/year | ~46–56% of total cost base |
 | Total Estimated Costs | R$54.5M–108M/year | Infra + Engineering + Content + Marketing |
-```
 
 💰 Cost Structure (Estimated)
 
-```
 | # | Domain | Description | FTEs | Monthly Cost | Annual Cost (est.) |
 |---|---|---|---|---|---|
 | 1 | Engineering | Backend + BFF + Frontend squads | 35 | R$1.4M | R$12M–20M |
@@ -55,11 +52,9 @@ Platform characteristics:
 | 7 | Content | Licensing (Telecine, Premiere+), catalog strategy | 8 | R$4.0M | R$40M–60M |
 | 8 | Admin | HR, IT, FinOps | 8 | R$400K | R$4M–6M |
 | | **Total** | | **71** | **~R$11.6M** | **R$54.5M–108M** |
-```
 
 💰 Revenue Structure 
 
-```
 | # | Stream | Plan / Type | Active Subscribers | Price (R$/mo) | Monthly Revenue |
 |---|---|---|---|---|---|
 | 1.1 | Subscription | Plano Família | ~122,800 | R$121 | R$14.9M |
@@ -69,18 +64,15 @@ Platform characteristics:
 | 2 | Rentals | Individual title rentals | ~3,500 | R$8 avg | R$29K |
 | 3 | Purchases | Movie purchases (TVOD) | ~500 | R$26 avg | R$13K |
 | | **Total** | | **~148,500** | | **~R$16.1M/mo (R$193M/yr)** |
-```
 
 📊 Unit Economics
 
-```
 | Metric | Value | Notes |
 |---|---|---|
 | Cost per user / month (infra only) | R$7–10 | CDN + Cloud + Engineering allocated per MAU |
 | LTV range by plan | R$175 – R$1,513 | Compras/Alugueis (lowest) → Família (highest) |
 | LTV/CAC range by plan × channel | 3x – 17x | HBO/Google (3x) → Família/Google (17x) |
 | Payback period (Família, Meta) | ~1.4 months | At optimized CAC of R$75 |
-```
 
 Approach:
 Case 1 — Unit Economics & LTV Modeling
