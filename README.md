@@ -126,4 +126,4 @@ Marketing Science is not just modeling → it's decision systems
 Retention, acquisition, and infra are interdependent
 The best insights come from connecting layers, not isolating them
 
-Status: 🔄 In progress — converting from Excel to Python notebooks
+Status: 🔄 Done
